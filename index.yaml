@@ -1,0 +1,87 @@
+apiVersion: v1
+entries:
+  connect-policy:
+  - apiVersion: v2
+    appVersion: 1.0.0-alpha1
+    created: "2021-02-21T00:45:29.230396584Z"
+    description: A Helm chart for Kubernetes
+    digest: 69ca87a46af7cf9dcc8c33111a6cc1e4bb04f23c6e7a23af1ad0cd7ccb499c1d
+    name: connect-policy
+    type: application
+    urls:
+    - connect-policy-0.1.0.tgz
+    version: 0.1.0
+  connect-policy-all:
+  - apiVersion: v2
+    appVersion: 1.0.0-alhpa1
+    created: "2021-02-21T00:45:29.242452176Z"
+    dependencies:
+    - name: etcd
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.6.0
+    - name: node-telemetry
+      repository: file://../node-telemetry
+      version: 0.1.0
+    - name: connect-policy
+      repository: file://../connect-policy
+      version: 0.1.0
+    - name: descheduler
+      repository: file://../descheduler
+      version: 0.20.0
+    - name: connect-policy-scheduler
+      repository: file://../scheduler
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: ee96ac4f0f2c122d8738fed57a192023de10d113d6c3f121eaff17b1dc28dbc8
+    name: connect-policy-all
+    type: application
+    urls:
+    - connect-policy-all-0.1.0.tgz
+    version: 0.1.0
+  connect-policy-scheduler:
+  - apiVersion: v1
+    appVersion: 1.0.0-alpha1
+    created: "2021-02-21T00:45:29.243341934Z"
+    description: Scheduler for connect policy
+    digest: 8598ae0ab45dbc738a49104e923dab63cf850a830abbf22555512b75b2c0f943
+    name: connect-policy-scheduler
+    type: application
+    urls:
+    - connect-policy-scheduler-0.1.0.tgz
+    version: 0.1.0
+  descheduler:
+  - apiVersion: v1
+    appVersion: 0.20.0-1.0.0-alpha1
+    created: "2021-02-21T00:45:29.24449625Z"
+    description: Descheduler for Kubernetes is used to rebalance clusters by evicting
+      pods that can potentially be scheduled on better nodes. In the current implementation,
+      descheduler does not schedule replacement of evicted pods but relies on the
+      default scheduler for that.
+    digest: da7633eabdcb970450d98c5dd8226e1078f1d45ef8997aaace0a0dc847a16444
+    home: https://github.com/kubernetes-sigs/descheduler
+    icon: https://kubernetes.io/images/favicon.png
+    keywords:
+    - kubernetes
+    - descheduler
+    - kube-scheduler
+    maintainers:
+    - email: kubernetes-sig-scheduling@googlegroups.com
+      name: Kubernetes SIG Scheduling
+    name: descheduler
+    sources:
+    - https://github.com/kubernetes-sigs/descheduler
+    urls:
+    - descheduler-0.20.0.tgz
+    version: 0.20.0
+  node-telemetry:
+  - apiVersion: v2
+    appVersion: 1.0.0-alpha1
+    created: "2021-02-21T00:45:29.245562596Z"
+    description: Basic inter-Node telemetry collection
+    digest: 26acef6a2390cdbfabd3fa6e35a5cc6a44e318cb9743dca6435ab778d7fee9ec
+    name: node-telemetry
+    type: application
+    urls:
+    - node-telemetry-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-02-21T00:45:29.228986954Z"
